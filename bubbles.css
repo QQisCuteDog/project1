@@ -1,0 +1,75 @@
+#background-wrap {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.bubble {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  box-shadow: 0px 20px 10px rgb(127, 186, 159, 0.1),
+    inset 0px 0px 5px rgb(179, 186, 183);
+}
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 500px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+.x1 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: -5%;
+  top: 5%;
+  transform: scale(0.6);
+}
+
+.x2 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 70%;
+  top: 80%;
+  transform: scale(0.8);
+}
+
+.x3 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 50%;
+  top: 50%;
+  transform: scale(0.3);
+}
+
+.x4 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 25%;
+  top: 35%;
+  transform: scale(0.8);
+}
+
+.x5 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 61%;
+  top: 10%;
+  transform: scale(0.8);
+}
